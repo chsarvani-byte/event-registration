@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Registration Successful</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        /* =========================
+           SAME WEBSITE BACKGROUND
+        ========================== */
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #4f8df7 0%,
+                #6d5dfc 50%,
+                #8d4de8 100%
+            );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 20px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* Decorative circles */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            width: 230px;
+
+            height: 230px;
+
+            background: rgba(255,255,255,0.12);
+
+            border-radius: 50%;
+
+            top: -90px;
+
+            left: -80px;
+        }
+
+
+        body::after {
+
+            content: "";
+
+            position: fixed;
+
+            width: 280px;
+
+            height: 280px;
+
+            background: rgba(255,255,255,0.10);
+
+            border-radius: 50%;
+
+            bottom: -120px;
+
+            right: -90px;
+        }
+
+
+        /* =========================
+           SUCCESS CARD
+        ========================== */
+
+        .success-card {
+
+            width: 100%;
+
+            max-width: 560px;
+
+            background: rgba(255,255,255,0.98);
+
+            border-radius: 25px;
+
+            padding: 50px 40px;
+
+            text-align: center;
+
+            box-shadow:
+                0 25px 60px rgba(0,0,0,0.25);
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* =========================
+           SUCCESS ICON
+        ========================== */
+
+        .success-icon {
+
+            width: 110px;
+
+            height: 110px;
+
+            margin: 0 auto 25px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                135deg,
+                #4f8df7,
+                #8d4de8
+            );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            box-shadow:
+                0 12px 30px rgba(91,83,245,0.30);
+
+            animation: pop 0.6s ease;
+        }
+
+
+        .check {
+
+            color: white;
+
+            font-size: 60px;
+
+            font-weight: bold;
+        }
+
+
+        @keyframes pop {
+
+            0% {
+
+                transform: scale(0);
+
+                opacity: 0;
+            }
+
+
+            70% {
+
+                transform: scale(1.12);
+            }
+
+
+            100% {
+
+                transform: scale(1);
+
+                opacity: 1;
+            }
+
+        }
+
+
+        /* =========================
+           TITLE
+        ========================== */
+
+        h1 {
+
+            margin: 0;
+
+            font-size: 36px;
+
+            font-weight: 800;
+
+            background: linear-gradient(
+                90deg,
+                #2563eb,
+                #7c3aed
+            );
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        /* =========================
+           TEXT
+        ========================== */
+
+        .thank-you {
+
+            margin-top: 18px;
+
+            color: #172554;
+
+            font-size: 19px;
+
+            font-weight: 700;
+        }
+
+
+        .description {
+
+            margin-top: 10px;
+
+            color: #64748b;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================== */
+
+        .register-button {
+
+            display: inline-block;
+
+            margin-top: 28px;
+
+            padding: 15px 30px;
+
+            border-radius: 12px;
+
+            background: linear-gradient(
+                90deg,
+                #1683f7,
+                #9145e8
+            );
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            box-shadow:
+                0 8px 20px rgba(91,83,245,0.30);
+
+            transition: all 0.25s ease;
+        }
+
+
+        .register-button:hover {
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 12px 25px rgba(91,83,245,0.40);
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 600px) {
+
+            .success-card {
+
+                padding: 40px 22px;
+
+                border-radius: 20px;
+            }
+
+
+            .success-icon {
+
+                width: 90px;
+
+                height: 90px;
+            }
+
+
+            .check {
+
+                font-size: 50px;
+            }
+
+
+            h1 {
+
+                font-size: 29px;
+            }
+
+
+            .thank-you {
+
+                font-size: 17px;
+            }
+
+
+            .description {
+
+                font-size: 14px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="success-card">
+
+
+    <!-- SUCCESS ICON -->
+
+    <div class="success-icon">
+
+        <span class="check">
+            ✓
+        </span>
+
+    </div>
+
+
+    <!-- TITLE -->
+
+    <h1>
+        Registration Successful!
+    </h1>
+
+
+    <!-- MESSAGE -->
+
+    <p class="thank-you">
+
+        🎉 Thank you for registering!
+
+    </p>
+
+
+    <p class="description">
+
+        Your registration has been received successfully.
+        We look forward to seeing you at the event.
+
+    </p>
+
+
+    <!-- BACK TO FORM -->
+
+    <a
+        href="event-registration.html"
+        class="register-button"
+    >
+
+        📝 Register Another Student
+
+    </a>
+
+
+</div>
+
+
+</body>
+
+</html>
