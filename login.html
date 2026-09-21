@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration | Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4f8df7, #6d5dfc, #8d4de8);
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .login-option {
+            display: block;
+            text-decoration: none;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 15px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .student {
+            background: linear-gradient(135deg, #4f8df7, #5b6dfc);
+        }
+
+        .admin {
+            background: linear-gradient(135deg, #7b4de8, #9b4de8);
+        }
+
+        .login-option:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .note {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="icon">🎓</div>
+
+        <h1>Event Registration</h1>
+
+        <p class="subtitle">
+            Choose your login type
+        </p>
+
+        <a href="student-login.html" class="login-option student">
+            👩‍🎓 Student Login
+        </a>
+
+        <a href="admin-login.html" class="login-option admin">
+            🔐 Admin Login
+        </a>
+
+        <p class="note">
+            Select the appropriate option to continue.
+        </p>
+
+    </div>
+
+</body>
+</html>
